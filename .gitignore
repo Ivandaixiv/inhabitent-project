@@ -14,7 +14,6 @@ themes/*
 !themes/inhabitent/
 # Ignore packages #
 themes/inhabitent/node_modules/
-themes/inhabitent/images/
 # Ignore OS files #
 .DS_Store
 .DS_Store?
