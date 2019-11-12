@@ -11,6 +11,12 @@ textarea {
 	font-family: $font__main;
 	@include font-size(1);
 	line-height: $font__line-height-body;
+	// Typography
+
+	// The base font size is 16px and its HEX code is #404040
+	// The base line-height for the site is 1.75
+	// The main font family is Merriweather
+	// The accent font family is Novovento Sans Web (for headings, etc.)
 }
 
 /* Headings */

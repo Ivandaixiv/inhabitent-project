@@ -44,7 +44,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Front page
 --------------------------------------------------------------*/
 html {
-  font-family: sans-serif;
+  font-family: 'Merriweather', serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
@@ -200,7 +200,7 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 fieldset {
-  border: 1px solid #c0c0c0;
+  border: 0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
@@ -393,6 +393,7 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
+  width: 200px;
   color: #666;
   border: 1px solid #ccc;
   border-radius: 3px; }
@@ -421,8 +422,6 @@ textarea {
 /* Links */
 a {
   color: royalblue; }
-  a:visited {
-    color: purple; }
   a:hover, a:focus, a:active {
     color: midnightblue; }
   a:focus {
@@ -433,6 +432,7 @@ a {
 /* Menus */
 .main-navigation {
   background: black;
+  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -446,6 +446,28 @@ a {
     overflow: hidden; }
   .main-navigation .navigation-home .logo-button {
     height: 40px; }
+  .main-navigation .navigation-bar-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .main-navigation .navigation-bar-wrapper .navigation-bar {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      width: 500px; }
+      .main-navigation .navigation-bar-wrapper .navigation-bar .menu-main-menu-container ul li {
+        padding: 15px;
+        text-transform: uppercase; }
+      .main-navigation .navigation-bar-wrapper .navigation-bar i {
+        padding: 15px; }
+    .main-navigation .navigation-bar-wrapper .search-field {
+      background: none;
+      width: 0;
+      -webkit-transition: all 1s;
+      transition: all 1s; }
   .main-navigation ul {
     display: none;
     list-style: none;

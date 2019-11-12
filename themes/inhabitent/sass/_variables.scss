@@ -1,6 +1,7 @@
 // Structure
 
 $base__space-unit: 1.5rem;
+$base_page_width: 1120px;
 
 // Colors
 
@@ -19,6 +20,10 @@ $color__link: royalblue;
 $color__link-visited: purple;
 $color__link-hover: midnightblue;
 
+// $color__link: #fff;
+// $color__link-visited: purple;
+// $color__link-hover: #f0e4d1;
+
 // Typography
 
 $font__main: sans-serif;
@@ -26,3 +31,7 @@ $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
+
+//Navigation Area
+$navigation_color: #fff;
+$padding-base-navigation: 15px;
