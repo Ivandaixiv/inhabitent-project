@@ -22,7 +22,7 @@ function red_starter_body_classes( $classes ) {
 add_filter( 'body_class', 'red_starter_body_classes' );
 
 function inhabitent_logo_link() {
-	return homeurl();
+	return home_url();
 }
 
 add_filter('login_headerurl', 'inhabitent_logo_link');

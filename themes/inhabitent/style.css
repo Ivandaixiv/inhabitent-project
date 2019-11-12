@@ -432,10 +432,20 @@ a {
 
 /* Menus */
 .main-navigation {
-  clear: both;
-  display: block;
-  float: left;
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 15%;
   width: 100%; }
+  .main-navigation .navigation-home h1 {
+    display: none;
+    overflow: hidden; }
+  .main-navigation .navigation-home .logo-button {
+    height: 40px; }
   .main-navigation ul {
     display: none;
     list-style: none;
