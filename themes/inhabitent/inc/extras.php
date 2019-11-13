@@ -31,13 +31,15 @@ add_filter('login_headerurl', 'inhabitent_logo_link');
 // 	wp_enqueue_style('inhabitent-logo', get_stylesheet_uri() );
 // }
 
-// add_action('wp_enqueue_scripts','inhabitent_logo');
-?>
-
-<style type="text/css">
+function my_login_logo() {
+	?>
+	<style type="text/css">
 	body.login div#login h1 a {
 		background-image: url("<?php echo get_stylesheet_directory_uri();?>/images/logos/inhabitent-logo-tent.svg");
 	}
-</style>
+	</style>
+<?php
+}
+add_action('login_enqueue_scripts','my_login_logo');
 
 

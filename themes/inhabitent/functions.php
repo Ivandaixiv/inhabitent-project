@@ -94,6 +94,12 @@ function red_starter_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
 
+function inhabitent_main_scripts(){
+	
+	wp_enqueue_script('jquery','https://code.jquery.com/jquery-3.4.1.min.js');
+	wp_enqueue_script( 'inhabitent-main-script', get_template_directory_uri().'/build/js/script.min.js');
+}
+add_action('wp_enqueue_scripts', 'inhabitent_main_scripts');
 /**
  * Custom template tags for this theme.
  */
@@ -115,3 +121,5 @@ function inhabitent_fontawesome(){
 	wp_enqueue_style( 'inhabitent-fontawesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css');
 }
 add_action('wp_enqueue_scripts', 'inhabitent_fontawesome');
+
+add_theme_support( 'post-thumbnails' ); 

@@ -395,7 +395,7 @@ input[type="search"],
 textarea {
   width: 200px;
   color: #666;
-  border: 1px solid #ccc;
+  border: 0;
   border-radius: 3px; }
   input[type="text"]:focus,
   input[type="email"]:focus,
@@ -431,7 +431,7 @@ a {
 
 /* Menus */
 .main-navigation {
-  background: black;
+  position: absolute;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -467,7 +467,8 @@ a {
       background: none;
       width: 0;
       -webkit-transition: all 1s;
-      transition: all 1s; }
+      transition: all 1s;
+      color: royalblue; }
   .main-navigation ul {
     display: none;
     list-style: none;

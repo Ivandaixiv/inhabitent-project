@@ -17,6 +17,5 @@
 		</div><!-- #page -->
 
 		<?php wp_footer(); ?>
-	<script src="<?php echo get_template_directory_uri();?>/build/js/script.min.js">
 	</body>
 </html>

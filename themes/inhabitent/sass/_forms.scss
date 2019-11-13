@@ -41,7 +41,8 @@ input[type="search"],
 textarea {
 	width: 200px;
 	color: #666;
-	border: 1px solid #ccc;
+	border: 0;
+	// border: 1px solid #ccc;
 	border-radius: 3px;
 
 	&:focus {
