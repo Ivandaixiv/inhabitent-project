@@ -47,10 +47,9 @@
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
+			<div id="content" class="site-content">
 			<?php
 			if ( has_post_thumbnail() ) {
 				the_post_thumbnail();
 			} 
 		?>
-
-			<div id="content" class="site-content">

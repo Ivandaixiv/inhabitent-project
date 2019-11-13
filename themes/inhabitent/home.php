@@ -19,6 +19,7 @@ get_header(); ?>
 	   <?php while ( $journal->have_posts() ) : $journal->the_post(); ?>
 		   <h1><?php the_title(); ?></h1>
 		   <?php the_content(); ?>
+		   <?php the_post_thumbnail()?>
 		<?php endwhile; ?>
 		<?php the_posts_navigation(); ?>
 		<?php wp_reset_postdata(); ?>
