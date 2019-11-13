@@ -72,3 +72,7 @@ mark, ins {
 big {
 	font-size: 125%;
 }
+::placeholder{
+	color: $color_link-hover_navigation;
+	opacity: 1;
+}

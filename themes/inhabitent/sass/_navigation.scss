@@ -55,6 +55,10 @@ a {
 			justify-content: flex-end;
 			width: 500px;
 	
+			.search-icon {
+				color: $color_link_navigation;
+			}
+
 			.menu-main-menu-container {
 				
 				ul {
@@ -62,6 +66,14 @@ a {
 					li {
 						padding: $padding-base-navigation;
 						text-transform: uppercase;
+						
+						a {
+							color: $color_link_navigation;
+						}
+
+						a:hover {
+							color: $color_link-hover_navigation;
+						}
 					}
 	
 				}
@@ -74,10 +86,11 @@ a {
 		}
 
 		.search-field {
+			display: none;
 			background: none;
 			width: 0;
-			transition: all 1s;
-			color: $color__link;
+			transition: all .5s;
+			color: $color_link_navigation;
 		}
 		
 		// .navigation-form:hover .search-field {
@@ -182,4 +195,8 @@ a {
 		text-align: right;
 		width: 50%;
 	}
+}
+.banner-image {
+	filter: brightness(60%);
+	z-index: -1;
 }

@@ -38,7 +38,7 @@
 					<div class="navigation-bar-wrapper">
 						<div class="navigation-bar">
 							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-							<a href="#" id="search-icon"><i class="fa fa-search"></i></a>
+							<a href="#" id="search-icon"><i class="fa fa-search search-icon"></i></a>
 						</div>
 						<div class="navigation-form">
 							<?php echo get_search_form();?>
@@ -48,8 +48,10 @@
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">
-			<?php
-			if ( has_post_thumbnail() ) {
-				the_post_thumbnail();
-			} 
-		?>
+				<div class="banner-image">
+					<?php
+						if ( has_post_thumbnail() ) {
+							the_post_thumbnail();
+						} 
+					?>
+				</div>

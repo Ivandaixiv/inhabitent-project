@@ -200,9 +200,10 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 fieldset {
+  color: white;
   border: 0;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
+  padding: 0.625em 0.75em; }
 
 legend {
   border: 0;
@@ -282,6 +283,22 @@ mark, ins {
 
 big {
   font-size: 125%; }
+
+::-webkit-input-placeholder {
+  color: #f0e4d1;
+  opacity: 1; }
+
+::-moz-placeholder {
+  color: #f0e4d1;
+  opacity: 1; }
+
+::-ms-input-placeholder {
+  color: #f0e4d1;
+  opacity: 1; }
+
+::placeholder {
+  color: #f0e4d1;
+  opacity: 1; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -458,17 +475,24 @@ a {
           -ms-flex-pack: end;
               justify-content: flex-end;
       width: 500px; }
+      .main-navigation .navigation-bar-wrapper .navigation-bar .search-icon {
+        color: #fff; }
       .main-navigation .navigation-bar-wrapper .navigation-bar .menu-main-menu-container ul li {
         padding: 15px;
         text-transform: uppercase; }
+        .main-navigation .navigation-bar-wrapper .navigation-bar .menu-main-menu-container ul li a {
+          color: #fff; }
+        .main-navigation .navigation-bar-wrapper .navigation-bar .menu-main-menu-container ul li a:hover {
+          color: #f0e4d1; }
       .main-navigation .navigation-bar-wrapper .navigation-bar i {
         padding: 15px; }
     .main-navigation .navigation-bar-wrapper .search-field {
+      display: none;
       background: none;
       width: 0;
-      -webkit-transition: all 1s;
-      transition: all 1s;
-      color: royalblue; }
+      -webkit-transition: all .5s;
+      transition: all .5s;
+      color: #fff; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -529,6 +553,11 @@ a {
   float: right;
   text-align: right;
   width: 50%; }
+
+.banner-image {
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
+  z-index: -1; }
 
 /*--------------------------------------------------------------
 # Accessibility
