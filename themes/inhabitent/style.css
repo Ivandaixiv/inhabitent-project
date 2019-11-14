@@ -49,7 +49,8 @@ html {
   -ms-text-size-adjust: 100%; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  width: 1120px; }
 
 article,
 aside,
@@ -555,9 +556,12 @@ a {
   width: 50%; }
 
 .banner-image {
-  -webkit-filter: brightness(60%);
-          filter: brightness(60%);
-  z-index: -1; }
+  height: 100vh;
+  width: 100vw;
+  background-position: center bottom; }
+
+.home .site .site-content .banner-image {
+  background-position: center top; }
 
 /*--------------------------------------------------------------
 # Accessibility

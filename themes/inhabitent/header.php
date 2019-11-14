@@ -48,10 +48,9 @@
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">
-				<div class="banner-image">
-					<?php
-						if ( has_post_thumbnail() ) {
-							the_post_thumbnail();
-						} 
-					?>
+				<div class="banner-image" style=" background-image: linear-gradient(rgba(0, 0, 0, .35),rgba(0, 0, 0, .35)), url(<?php
+				if ( has_post_thumbnail() ) {
+					echo get_the_post_thumbnail_url();
+				} 
+				?>); background-size: cover; " >
 				</div>
