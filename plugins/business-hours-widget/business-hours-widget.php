@@ -1,6 +1,6 @@
 <?php
 /**
- * RED WordPress Widget Boilerplate
+ * Business Hours Widget Boilerplate
  *
  * The RED Widget Boilerplate is an organized, maintainable boilerplate for building widgets using WordPress best practices.
  *
