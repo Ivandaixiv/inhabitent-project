@@ -6,19 +6,19 @@
  *
  * Lightly forked from the WordPress Widget Boilerplate by @tommcfarlin.
  *
- * @package   Widget_Name
- * @author    Your Name <email@example.com>
+ * @package   Tent_Biz_Hours
+ * @author    Ivan <ivandaixivwork@gmail.com>
  * @license   GPL-2.0+
  * @link      http://example.com
- * @copyright 2015 Your Name or Company Name
+ * @copyright 2019 Ivan
  *
  * @wordpress-plugin
- * Plugin Name:       @TODO
- * Plugin URI:        @TODO
- * Description:       @TODO
+ * Plugin Name:       Tent_Biz_Hours
+ * Plugin URI:        https://github.com/ivandaixiv/inhabitent-project
+ * Description:       A Business Hours widget for the inhabitent project
  * Version:           1.0.0
- * Author:            @TODO
- * Author URI:        @TODO
+ * Author:            Ivan
+ * Author URI:        https://github.com/ivandaixiv/
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  */
