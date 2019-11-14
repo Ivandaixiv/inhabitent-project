@@ -25,14 +25,18 @@ a {
 }
 
 /* Menus */
-
+// Styles for the exceptions
+.navigation-wrapper {
+	width: 100%;
+	border-bottom: 1px solid gray;
+}
 .main-navigation {
-	position: absolute;
+	// position: absolute;
 	color: $navigation_color;
 	display: flex;
 	justify-content: space-between;
-	padding: 10px 15%;
-	width: 100%;
+	// padding: 10px 15%;
+	// width: 100%;
 
 	.navigation-home {
 
@@ -56,7 +60,8 @@ a {
 			width: 500px;
 	
 			.search-icon {
-				color: $color_link_navigation;
+				// color: $color_link_navigation;
+				color: $color__link;
 			}
 
 			.menu-main-menu-container {
@@ -68,11 +73,13 @@ a {
 						text-transform: uppercase;
 						
 						a {
-							color: $color_link_navigation;
+							// color: $color_link_navigation;
+							color: $color__link;
 						}
 
 						a:hover {
-							color: $color_link-hover_navigation;
+							// color: $color_link-hover_navigation;
+							color: $color__link-hover;
 						}
 					}
 	
@@ -90,7 +97,8 @@ a {
 			background: none;
 			width: 0;
 			transition: all .5s;
-			color: $color_link_navigation;
+			// color: $color_link_navigation;
+			color: black;
 		}
 		
 		// .navigation-form:hover .search-field {

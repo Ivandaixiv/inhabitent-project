@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const searchBtn = document.getElementById('search-icon');
-    const page = document.getElementById('content');
+    const page = document.getElementById('site-wrapper');
     const searchFields = document.getElementsByClassName('search-field');
     const searchField = searchFields[0];
     let isOpened = false;

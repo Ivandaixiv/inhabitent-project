@@ -73,6 +73,7 @@ big {
 	font-size: 125%;
 }
 ::placeholder{
-	color: $color_link-hover_navigation;
+	// color: $color_link-hover_navigation;
+	color: $search-field-gray;
 	opacity: 1;
 }

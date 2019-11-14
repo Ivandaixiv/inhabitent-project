@@ -3,3 +3,25 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+.width-restriction {
+    margin: 0 auto;
+    width: $base-page-width;
+}
+
+.site-wrapper {
+    width: 100%;
+    .site-content {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 2em;
+
+        .content-area {
+            grid-column-start: 1;
+            border-right: 1px solid gray;
+        }
+        
+        .widget-area {
+            grid-column-start: 0;
+        }
+    }
+}
