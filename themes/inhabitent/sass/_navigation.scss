@@ -28,7 +28,7 @@ a {
 // Styles for the exceptions
 .navigation-wrapper {
 	width: 100%;
-	border-bottom: 1px solid gray;
+	border-bottom: 1px solid $border-gray;
 }
 .main-navigation {
 	// position: absolute;
@@ -46,6 +46,10 @@ a {
 		}
 
 		.logo-button {
+			margin: 10px 0;
+			width: 60px;
+			background-size: contain;
+			background-repeat: no-repeat;
 			height: 40px;
 		}
 

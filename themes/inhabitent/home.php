@@ -20,9 +20,23 @@ get_header(); ?>
 ?>	   
 	   <?php if ( $journal->have_posts() ) : ?>
 	   <?php while ( $journal->have_posts() ) : $journal->the_post(); ?>
-		   <h1><?php the_title(); ?></h1>
-		   <?php the_post_thumbnail()?>
-		   <?php the_content(); ?>
+		    <div class="journal-entry">
+				<div class="journal-title-wrapper">
+					<h1 class="journal-title"><?php the_title(); ?></h1>
+				</div>
+				<div class="journal-thumbnail">
+					<?php the_post_thumbnail(array(760,520))?>
+				</div>
+				<p>
+					<?php echo get_the_date();?>
+					/
+					<?php echo get_comments_number();?> Comments
+					/
+					<?php echo get_the_author_meta('first_name');?>
+					<?php echo get_the_author_meta('last_name');?>
+	    		</p>
+				<?php the_content(); ?>
+	    	</div>
 		<?php endwhile; ?>
 		<?php the_posts_navigation(); ?>
 		<?php wp_reset_postdata(); ?>

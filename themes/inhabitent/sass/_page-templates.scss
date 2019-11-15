@@ -7,6 +7,9 @@
     margin: 0 auto;
     width: $base-page-width;
 }
+.site-main {
+    margin-top: 3rem
+}
 
 .site-wrapper {
     width: 100%;
@@ -17,11 +20,36 @@
 
         .content-area {
             grid-column-start: 1;
-            border-right: 1px solid gray;
+            border-right: 1px solid $border-gray;
         }
         
         .widget-area {
             grid-column-start: 0;
         }
     }
+}
+// Journal Page
+.journal-entry {
+    
+    .journal-thumbnail {
+        position: relative;
+    }
+
+    .journal-title-wrapper {
+        max-width: 30vw;
+        color: $base_journal_title;
+        text-transform: uppercase;
+        position: absolute;
+        margin-top: 2em;
+        background: $base_theme_green;
+        z-index: 1;
+        
+        .journal-title {
+            margin: 1.2rem;
+            padding: 5px 20px;
+            width: 90%;
+            line-height: 1.2;
+        }
+    }
+    
 }

@@ -44,7 +44,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Front page
 --------------------------------------------------------------*/
 html {
-  font-family: 'Merriweather', serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
@@ -235,10 +234,10 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Merriweather";
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.5; }
+  line-height: 1.75; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -259,7 +258,7 @@ address {
 
 pre {
   background: #eee;
-  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-family: "Merriweather";
   font-size: 15px;
   font-size: 0.9375rem;
   line-height: 1.6;
@@ -269,7 +268,7 @@ pre {
   padding: 1.6rem; }
 
 code, kbd, tt, var {
-  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-family: "Merriweather";
   font-size: 15px;
   font-size: 0.9375rem; }
 
@@ -448,7 +447,7 @@ a {
 /* Menus */
 .navigation-wrapper {
   width: 100%;
-  border-bottom: 1px solid gray; }
+  border-bottom: 1px solid #e1e1e1; }
 
 .main-navigation {
   color: #fff;
@@ -462,6 +461,10 @@ a {
     display: none;
     overflow: hidden; }
   .main-navigation .navigation-home .logo-button {
+    margin: 10px 0;
+    width: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
     height: 40px; }
   .main-navigation .navigation-bar-wrapper {
     display: -webkit-box;
@@ -739,6 +742,9 @@ object {
   margin: 0 auto;
   width: 1120px; }
 
+.site-main {
+  margin-top: 3rem; }
+
 .site-wrapper {
   width: 100%; }
   .site-wrapper .site-content {
@@ -747,6 +753,23 @@ object {
     grid-gap: 2em; }
     .site-wrapper .site-content .content-area {
       grid-column-start: 1;
-      border-right: 1px solid gray; }
+      border-right: 1px solid #e1e1e1; }
     .site-wrapper .site-content .widget-area {
       grid-column-start: 0; }
+
+.journal-entry .journal-thumbnail {
+  position: relative; }
+
+.journal-entry .journal-title-wrapper {
+  max-width: 30vw;
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  margin-top: 2em;
+  background: #248A83;
+  z-index: 1; }
+  .journal-entry .journal-title-wrapper .journal-title {
+    margin: 1.2rem;
+    padding: 5px 20px;
+    width: 90%;
+    line-height: 1.2; }

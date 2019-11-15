@@ -10,7 +10,6 @@
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
@@ -31,8 +30,10 @@
 					<nav id="site-navigation" class="main-navigation width-restriction" role="navigation">
 						<div class="navigation-home">
 							<a href="<?php echo home_url();?>">
-								<img src="<?php echo get_template_directory_uri();?>/images/logos/inhabitent-logo-tent-white.svg" alt="Inhabitent Logo" class="logo-button">
-								<h1>Inhabitent</h1>
+								<div class="logo-button" style="background-image: url('<?php echo get_template_directory_uri();?>/images/logos/inhabitent-logo-tent.svg');">
+								</div>
+								<!-- <img src="<?php echo get_template_directory_uri();?>/images/logos/inhabitent-logo-tent-white.svg" alt="Inhabitent Logo" class="logo-button">
+								<h1>Inhabitent</h1> -->
 							</a>
 						</div>
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
