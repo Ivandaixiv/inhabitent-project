@@ -435,15 +435,6 @@ textarea {
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
-a {
-  color: #248A83; }
-  a:hover, a:focus, a:active {
-    color: midnightblue; }
-  a:focus {
-    outline: thin dotted; }
-  a:hover, a:active {
-    outline: 0; }
-
 /* Menus */
 .navigation-wrapper {
   width: 100%;
@@ -488,7 +479,7 @@ a {
         .main-navigation .navigation-bar-wrapper .navigation-bar .menu-main-menu-container ul li a:hover {
           color: midnightblue; }
       .main-navigation .navigation-bar-wrapper .navigation-bar i {
-        padding: 15px; }
+        padding: 18px; }
     .main-navigation .navigation-bar-wrapper .search-field {
       display: none;
       background: none;
@@ -750,26 +741,56 @@ object {
   .site-wrapper .site-content {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-gap: 2em; }
+    grid-gap: 0 4em; }
     .site-wrapper .site-content .content-area {
-      grid-column-start: 1;
-      border-right: 1px solid #e1e1e1; }
+      grid-column-start: 1; }
     .site-wrapper .site-content .widget-area {
+      border-left: 1px solid #e1e1e1;
       grid-column-start: 0; }
 
 .journal-entry .journal-thumbnail {
   position: relative; }
 
 .journal-entry .journal-title-wrapper {
-  max-width: 30vw;
-  color: white;
+  max-width: 600px;
   text-transform: uppercase;
   position: absolute;
   margin-top: 2em;
   background: #248A83;
   z-index: 1; }
-  .journal-entry .journal-title-wrapper .journal-title {
-    margin: 1.2rem;
-    padding: 5px 20px;
-    width: 90%;
-    line-height: 1.2; }
+  .journal-entry .journal-title-wrapper a {
+    color: white;
+    text-decoration: none; }
+    .journal-entry .journal-title-wrapper a *:hover {
+      color: #f0e4d1; }
+    .journal-entry .journal-title-wrapper a .journal-title {
+      margin: 1.2rem;
+      max-width: 90%;
+      line-height: 1.2; }
+
+.journal-entry .journal-info {
+  color: white;
+  background: #248A83;
+  position: absolute;
+  z-index: 1;
+  padding: .4rem .8rem;
+  margin-top: -3.15em;
+  margin-left: 462.5px; }
+
+.journal-entry .read-more-btn {
+  color: black;
+  width: 150px;
+  margin: 10px 0; }
+  .journal-entry .read-more-btn a {
+    color: black;
+    text-decoration: none; }
+    .journal-entry .read-more-btn a p {
+      text-transform: uppercase;
+      padding: 10px;
+      text-align: center;
+      border: 1px solid black; }
+    .journal-entry .read-more-btn a *:hover {
+      background: #248A83;
+      padding: 11px;
+      border: 0;
+      color: white; }

@@ -22,20 +22,29 @@ get_header(); ?>
 	   <?php while ( $journal->have_posts() ) : $journal->the_post(); ?>
 		    <div class="journal-entry">
 				<div class="journal-title-wrapper">
-					<h1 class="journal-title"><?php the_title(); ?></h1>
+					<a href="<?php echo get_permalink();?>">
+						<h1 class="journal-title"><?php the_title(); ?></h1>
+	    			</a>
 				</div>
 				<div class="journal-thumbnail">
-					<?php the_post_thumbnail(array(760,520))?>
+					<?php the_post_thumbnail('full'); ?>
 				</div>
-				<p>
+				<p class="journal-info">
 					<?php echo get_the_date();?>
 					/
 					<?php echo get_comments_number();?> Comments
-					/
+					/ By
 					<?php echo get_the_author_meta('first_name');?>
 					<?php echo get_the_author_meta('last_name');?>
-	    		</p>
-				<?php the_content(); ?>
+				</p>
+				<?php the_excerpt(); ?>
+				<div class="read-more-btn">
+					<a href="<?php echo get_permalink();?>">
+						<p>
+							Read More <i class="fas fa-arrow-right"></i>
+						</p>
+					</a>
+	    		</div>
 	    	</div>
 		<?php endwhile; ?>
 		<?php the_posts_navigation(); ?>
