@@ -725,6 +725,40 @@ object {
 .gallery-caption {
   display: block; }
 
+.site-info {
+  color: white;
+  font-size: 18px; }
+  .site-info .footer-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px; }
+    .site-info .footer-wrapper .contact-info {
+      grid-column-start: 1; }
+    .site-info .footer-wrapper .biz-hours {
+      grid-column-start: 2; }
+      .site-info .footer-wrapper .biz-hours .opening-days {
+        font-weight: bold; }
+    .site-info .footer-wrapper div ul li {
+      list-style: none; }
+      .site-info .footer-wrapper div ul li h2 {
+        color: #d99054; }
+      .site-info .footer-wrapper div ul li a {
+        text-decoration: none;
+        color: white; }
+      .site-info .footer-wrapper div ul li *:hover a {
+        text-decoration: underline; }
+    .site-info .footer-wrapper div .social-media {
+      display: inline-block; }
+    .site-info .footer-wrapper .footer-logo {
+      grid-column-start: 4; }
+      .site-info .footer-wrapper .footer-logo img {
+        padding: 10%; }
+  .site-info .copyright {
+    margin: 0;
+    text-align: center; }
+
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/

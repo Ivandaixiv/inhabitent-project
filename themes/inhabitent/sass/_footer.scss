@@ -1,1 +1,63 @@
 // inhabitent theme's footer styles
+.site-info {
+    color: white;
+    font-size: 18px;
+    .footer-wrapper {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 50px;
+        
+        .contact-info {
+            grid-column-start: 1;
+        }
+        .biz-hours {
+            grid-column-start: 2;
+
+            .opening-days {
+                font-weight: bold;
+            }
+        }
+        div {
+            ul {
+                li {
+                    list-style: none;
+    
+                    h2 {
+                        color: $base_theme_orange;
+                    }
+    
+                     a {
+                        text-decoration: none;
+                        color: white;
+    
+                     }
+    
+                     *:hover a {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            
+            .social-media {
+                display: inline-block;
+            }
+            
+        }
+
+        .footer-logo {
+
+            grid-column-start: 4;
+            img {
+                padding: 10%;
+            }
+        }
+    }
+
+    .copyright {
+        margin: 0;
+        text-align: center;
+    }
+}
