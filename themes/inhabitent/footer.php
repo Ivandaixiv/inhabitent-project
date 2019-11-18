@@ -15,8 +15,8 @@
 						<div class="contact-info">
 							<ul>
 								<li><h2>Contact Info</h2></li>
-								<li><i class="fas fa-envelope"></i><a href="mailto:info@inhabitent.com">info@inhabitent.com</a></li>
-								<li><i class="fas fa-phone-alt"></i><a href="tel:778-456-7891">778-456-7891</a></li>
+								<li><i class="fas fa-envelope"></i><a href="mailto:info@inhabitent.com"> info@inhabitent.com</a></li>
+								<li><i class="fas fa-phone-alt"></i><a href="tel:778-456-7891"> 778-456-7891</a></li>
 							</ul>
 							<ul>
 								<li class="social-media"><i class="fab fa-facebook-square"></i></li>

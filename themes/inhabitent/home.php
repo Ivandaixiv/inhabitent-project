@@ -38,7 +38,7 @@ get_header(); ?>
 					<?php echo get_the_author_meta('last_name');?>
 				</p>
 				<?php the_excerpt(); ?>
-				<div class="read-more-btn">
+				<div class="theme-button">
 					<a href="<?php echo get_permalink();?>">
 						<p>
 							Read More <i class="fas fa-arrow-right"></i>

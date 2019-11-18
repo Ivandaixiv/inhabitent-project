@@ -383,13 +383,6 @@ input[type="submit"] {
   line-height: 1;
   padding: .6rem 1rem .4rem;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
-  button:hover,
-  input[type="button"]:hover,
-  input[type="reset"]:hover,
-  input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa;
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
   button:active, button:focus,
   input[type="button"]:active,
   input[type="button"]:focus,
@@ -762,6 +755,26 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+.widget-area-container {
+  width: 300px; }
+
+.theme-button {
+  color: black;
+  width: 150px;
+  margin: 10px 0; }
+  .theme-button a {
+    color: black;
+    text-decoration: none; }
+    .theme-button a p {
+      text-transform: uppercase;
+      padding: 10px;
+      text-align: center;
+      border: 1px solid black; }
+    .theme-button a *:hover {
+      background: #248A83;
+      border: 1px solid rgba(0, 0, 0, 0);
+      color: white; }
+
 /* Front page */
 .width-restriction {
   margin: 0 auto;
@@ -809,22 +822,28 @@ object {
   z-index: 1;
   padding: .4rem .8rem;
   margin-top: -3.15em;
-  margin-left: 462.5px; }
+  margin-left: 425.5px; }
 
-.journal-entry .read-more-btn {
-  color: black;
-  width: 150px;
-  margin: 10px 0; }
-  .journal-entry .read-more-btn a {
-    color: black;
-    text-decoration: none; }
-    .journal-entry .read-more-btn a p {
-      text-transform: uppercase;
-      padding: 10px;
-      text-align: center;
-      border: 1px solid black; }
-    .journal-entry .read-more-btn a *:hover {
-      background: #248A83;
-      padding: 11px;
-      border: 0;
-      color: white; }
+.entry-content {
+  max-width: 700px; }
+  .entry-content label {
+    font-size: 1.25em;
+    text-transform: uppercase; }
+  .entry-content input, .entry-content textarea {
+    background: #eee;
+    border: 1px solid #e1e1e1; }
+  .entry-content .required {
+    color: #d99054; }
+  .entry-content .wpcf7-submit {
+    text-transform: uppercase;
+    font-size: 16px;
+    background: #248A83;
+    text-shadow: none;
+    color: #ffffff;
+    border: none;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 10px 20px; }
+    .entry-content .wpcf7-submit:hover {
+      background: #124744; }

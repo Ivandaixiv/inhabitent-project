@@ -11,9 +11,11 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 ?>
 
 <div id="secondary" class="widget-area" role="complementary">
-	<i class="fas fa-phone-alt"></i>
-	<i class="fas fa-envelope"></i>
-	<i class="fas fa-map-marker-alt"></i> 1490 W Broadway <br>
-	Vancouver, BC V6H 1H5
-	<?php dynamic_sidebar( 'sidebar-1' ); ?>
+	<div class="widget-area-container">
+		<i class="fas fa-phone-alt"></i>
+		<i class="fas fa-envelope"></i>
+		<i class="fas fa-map-marker-alt"></i> 1490 W Broadway <br>
+		Vancouver, BC V6H 1H5
+		<?php dynamic_sidebar( 'sidebar-1' ); ?>
+	</div>
 </div><!-- #secondary -->
