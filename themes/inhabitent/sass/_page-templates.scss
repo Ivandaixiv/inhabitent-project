@@ -32,6 +32,10 @@
 /* Front page */
 .front-page {
 
+    input[type="search"] {
+        color: $base_white;
+    }
+
     ::placeholder {
         color: $color_link-hover_navigation;
     }
@@ -86,14 +90,14 @@
         }
     }
 
-    .entry-header {
+    .full-logo {
+        background-repeat: no-repeat;
+        z-index: 1;
+        height: 300px;
         position: absolute;
-        top: 35vh;
+        top: 15vh;
         left: 50%;
         transform: translate(-50%, 50%);
-        text-transform: uppercase;
-        color: $base_white;
-        font-size: 1.5em;
     }
 
     .entry-content {
@@ -135,6 +139,7 @@
 // Journal Page
 .journal-entry {
     
+    
     .journal-thumbnail {
         position: relative;
     }
@@ -172,7 +177,7 @@
         z-index: 1;
         padding: .4rem .8rem;
         margin-top: -3.15em;
-        margin-left: 425.5px;
+        margin-left: 398.75px;
     }
 }
 // Find Us/ Contact page
@@ -211,6 +216,10 @@
 }
 // About
 .about-page {
+
+    input[type="search"] {
+        color: $base_white;
+    }
 
     ::placeholder {
         color: $color_link-hover_navigation;

@@ -11,8 +11,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<div class="banner-image" style=" background-image: linear-gradient(rgba(0, 0, 0, .4),rgba(0, 0, 0, .4)), url(<?php if ( has_post_thumbnail() ) {echo get_the_post_thumbnail_url();} ?>); background-size: cover; " >
 			</div>
-			<!-- <h1 class="about-title">About</h1> -->
-			<div class="full-logo style="background-image: url(' <?php echo get_template_directory_uri();?>/images/logos/inhabitent-logo-full.svg);>;">
+			<img class="full-logo" src=" <?php echo get_template_directory_uri();?>/images/logos/inhabitent-logo-full.svg);">
 				<?php
 			$args = array(
 				'order' => 'ASC',
@@ -34,5 +33,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
