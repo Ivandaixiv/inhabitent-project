@@ -30,6 +30,82 @@
     }
 }
 /* Front page */
+.front-page {
+
+    ::placeholder {
+        color: $color_link-hover_navigation;
+    }
+    
+    .site-header {
+        
+        position: absolute;
+        width: 100%;
+
+        .navigation-wrapper {
+           border: none;
+           margin: 0 auto;
+           width: 1120px;
+
+           .main-navigation {
+                .navigation-bar-wrapper {
+                    .navigation-bar{
+                        li {
+                            a {
+                                color: $base_white;
+                                text-shadow: 1px 1px $color__text-main;
+
+                                &:hover {
+                                    color: $color_link-hover_navigation;
+                                }
+                            }
+                            
+                        }
+                        .search-icon {
+                            color: $base_white;
+                            &:hover {
+                                color: $color_link-hover_navigation;
+                            }
+                        }
+                    }
+                }
+
+           }
+        }
+    }
+
+    div {
+        .site-content {
+            width: 100%;
+            .site-main {
+                margin: 0;
+                .banner-image {
+                    height: 100vh
+                }
+                
+            }
+        }
+    }
+
+    .entry-header {
+        position: absolute;
+        top: 35vh;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        text-transform: uppercase;
+        color: $base_white;
+        font-size: 1.5em;
+    }
+
+    .entry-content {
+        margin: 0 auto;
+        
+        h2 {
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+}
+// Width Limit
 .width-restriction {
     margin: 0 auto;
     width: $base-page-width;
@@ -132,4 +208,80 @@
         }
     }
 
+}
+// About
+.about-page {
+
+    ::placeholder {
+        color: $color_link-hover_navigation;
+    }
+
+    .site-header {
+        
+        position: absolute;
+        width: 100%;
+
+        .navigation-wrapper {
+           border: none;
+           margin: 0 auto;
+           width: 1120px;
+
+           .main-navigation {
+                .navigation-bar-wrapper {
+                    .navigation-bar{
+                        li {
+                            a {
+                                color: $base_white;
+                                text-shadow: 1px 1px $color__text-main;
+
+                                &:hover {
+                                    color: $color_link-hover_navigation;
+                                }
+                            }
+                            
+                        }
+                        .search-icon {
+                            color: $base_white;
+                            &:hover {
+                                color: $color_link-hover_navigation;
+                            }
+                        }
+                    }
+                }
+
+           }
+        }
+    }
+
+    div {
+        .site-content {
+            width: 100%;
+            .site-main {
+                margin: 0;
+                .banner-image {
+                    height: 100vh
+                }
+                
+            }
+        }
+    }
+
+    .entry-header {
+        position: absolute;
+        top: 35vh;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        text-transform: uppercase;
+        color: $base_white;
+        font-size: 1.5em;
+    }
+
+    .entry-content {
+        margin: 0 auto;
+        
+        h2 {
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
 }

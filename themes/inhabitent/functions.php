@@ -123,3 +123,17 @@ function inhabitent_fontawesome(){
 add_action('wp_enqueue_scripts', 'inhabitent_fontawesome');
 
 add_theme_support( 'post-thumbnails' ); 
+
+function check_enqueue_style() {
+    if ( ! is_admin() ) {    
+        // Conditionally enqueue
+        if ( is_front_page() ) {
+            // Front page stylesheet
+            wp_enqueue_style( 'front-page-style', get_template_directory_uri() . '/front-page-stylesheet.css' );
+        } else if ( is_page('about') ) {
+            // Static page style
+            wp_enqueue_style( 'static-page-style', get_template_directory_uri() . '/front-page-stylesheet.css' );
+        }
+    }
+}
+add_action( 'wp_enqueue_scripts', 'check_enqueue_style' );

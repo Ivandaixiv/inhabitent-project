@@ -5,6 +5,29 @@
  * @package RED_Starter_Theme
  */
 
+ $header_class ='';
+
+ if(is_front_page()){
+	$header_class = 'front-page';
+	$displayblue = 'none';
+	$displaywhite = "block";
+ }
+ elseif(is_page('about')){
+	$header_class = 'about-page';
+	$displayblue = "none";
+	$displaywhite = "block";
+ }
+//  elseif(is_post_type_archive('product')){
+// 	$header_class = 'shop-page';
+// 	$displayblue = true;
+// 	$displaywhite = false;
+	 
+//  } 
+ else {
+	$displayblue = "block";
+	$displaywhite = "none";
+ }
+
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 	<head>
@@ -17,23 +40,22 @@
 	</head>
 
 	<body <?php body_class(); ?>>
-		<div id="page" class="hfeed site">
+		<div id="page" class="hfeed site  <?php echo $header_class; ?>">
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<!-- <p class="site-description"><?php bloginfo( 'description' ); ?></p> -->
 				</div><!-- .site-branding -->
 
 				<div class="navigation-wrapper ">
 					<nav id="site-navigation" class="main-navigation width-restriction" role="navigation">
 						<div class="navigation-home">
 							<a href="<?php echo home_url();?>">
-								<div class="logo-button" style="background-image: url('<?php echo get_template_directory_uri();?>/images/logos/inhabitent-logo-tent.svg');">
+								<div class="logo-button" style="background-image: url('<?php echo get_template_directory_uri();?>/images/logos/inhabitent-logo-tent.svg'); display: <?php echo $displayblue ?>;">
 								</div>
-								<!-- <img src="<?php echo get_template_directory_uri();?>/images/logos/inhabitent-logo-tent-white.svg" alt="Inhabitent Logo" class="logo-button">
-								<h1>Inhabitent</h1> -->
+								<div class="logo-button" style="background-image: url('<?php echo get_template_directory_uri();?>/images/logos/inhabitent-logo-tent-white.svg'); display: <?php echo $displaywhite ?>;">
+								</div>
 							</a>
 						</div>
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
@@ -51,9 +73,3 @@
 			</header><!-- #masthead -->
 			<div class="site-wrapper width-restriction" id="site-wrapper">
 				<div id="content" class="site-content width-restriction">
-					<!-- <div class="banner-image" style=" background-image: linear-gradient(rgba(0, 0, 0, .35),rgba(0, 0, 0, .35)), url(<?php
-					if ( has_post_thumbnail() ) {
-						echo get_the_post_thumbnail_url();
-					} 
-					?>); background-size: cover; " >
-					</div> -->
