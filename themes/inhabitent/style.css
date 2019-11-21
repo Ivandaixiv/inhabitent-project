@@ -833,6 +833,16 @@ object {
       color: white; }
 
 /* Front page */
+.front-page .product-info {
+  text-align: center;
+  width: 1120px;
+  margin: 0 auto; }
+  .front-page .product-info div {
+    margin: 0 auto; }
+  .front-page .product-info .product-type-blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; }
+
 .front-page input[type="search"] {
   color: #ffffff; }
 

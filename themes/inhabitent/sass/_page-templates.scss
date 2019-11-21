@@ -31,7 +31,20 @@
 }
 /* Front page */
 .front-page {
+    
+    .product-info {
+        text-align: center;
+        width: 1120px;
+        margin: 0 auto;
 
+        div {
+            margin: 0 auto;
+        }
+        .product-type-blocks {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
     input[type="search"] {
         color: $base_white;
     }
