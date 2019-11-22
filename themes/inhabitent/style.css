@@ -812,8 +812,50 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-.widget-area-container {
+.widget-area {
   width: 300px; }
+  .widget-area .widget-area-container {
+    padding-top: 50px;
+    padding-left: 30px; }
+    .widget-area .widget-area-container aside {
+      font-weight: 300; }
+    .widget-area .widget-area-container h2 {
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 2px; }
+    .widget-area .widget-area-container .widget-contact {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .widget-area .widget-area-container .widget-contact i {
+        padding: 10px;
+        font-size: 1rem; }
+        .widget-area .widget-area-container .widget-contact i a {
+          font-size: 1.2rem;
+          padding: 0 5px;
+          color: #248A83;
+          text-decoration: none; }
+        .widget-area .widget-area-container .widget-contact i span {
+          display: block;
+          padding: 0 10px 35px 10px;
+          font-size: 1.2rem; }
+      .widget-area .widget-area-container .widget-contact .fa-map-marker-alt {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+    .widget-area .widget-area-container aside.widget div {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 40px; }
+    .widget-area .widget-area-container aside.widget p {
+      padding: 0 5px;
+      margin: 0;
+      height: 40px; }
 
 .theme-button {
   color: black;

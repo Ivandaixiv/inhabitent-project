@@ -2,9 +2,58 @@
 # Page Templates
 --------------------------------------------------------------*/
 // Widget Area Default
-.widget-area-container {
+.widget-area {
     width: 300px;
+    .widget-area-container {
+        padding-top: 50px;
+        padding-left: 30px;
+        aside {
+            font-weight: 300;
+        }
+        h2 {
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .widget-contact {
+            display: flex;
+            flex-direction: column;
+            
+            i {
+                padding: 10px ;
+                font-size: 1rem;
+
+                a {
+
+                    font-size: 1.2rem;
+                    padding: 0 5px;
+                    color: $base_theme_green;
+                    text-decoration: none;
+                }
+                span {
+                    display: block;
+                    padding: 0 10px 35px 10px;
+                    font-size: 1.2rem;
+                }
+            }
+            .fa-map-marker-alt {
+                display: flex;
+            }
+        }
+        aside.widget {
+            div {
+                display: flex;
+                height: 40px;
+            }
+            p {
+                padding: 0 5px;
+                margin: 0;
+                height: 40px;
+            }
+        }
+    }
 }
+
 // Button 
 .theme-button {
     color: black;
