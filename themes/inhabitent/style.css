@@ -883,13 +883,15 @@ object {
       border: 1px solid rgba(0, 0, 0, 0);
       color: white; }
 
+.frontpage-title {
+  text-align: center;
+  text-transform: uppercase; }
+
 /* Front page */
 .front-page .product-info {
   text-align: center;
   width: 1120px;
   margin: 0 auto; }
-  .front-page .product-info h2 {
-    text-transform: uppercase; }
   .front-page .product-info div {
     margin: 0 auto; }
   .front-page .product-info .product-type-blocks {
@@ -960,9 +962,16 @@ object {
 
 .front-page .entry-content {
   margin: 0 auto; }
-  .front-page .entry-content h2 {
-    text-align: center;
-    text-transform: uppercase; }
+
+.front-page .featured-journals-wrapper .featured-journals {
+  line-height: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: none; }
+  .front-page .featured-journals-wrapper .featured-journals .featured-journals-info {
+    line-height: 1.75;
+    border: 1px solid #e1e1e1;
+    border-top: 4px solid #e1e1e1; }
 
 .width-restriction {
   margin: 0 auto;
@@ -1087,6 +1096,3 @@ object {
 
 .about-page .entry-content {
   margin: 0 auto; }
-  .about-page .entry-content h2 {
-    text-align: center;
-    text-transform: uppercase; }

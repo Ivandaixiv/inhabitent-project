@@ -91,6 +91,11 @@
         }
     }
 }
+// Styling for all h2's
+.frontpage-title {
+    text-align: center;
+    text-transform: uppercase;
+}
 /* Front page */
 .front-page {
     
@@ -99,9 +104,6 @@
         width: 1120px;
         margin: 0 auto;
 
-        h2 {
-            text-transform: uppercase;
-        }
         div {
             margin: 0 auto;
         }
@@ -199,10 +201,19 @@
 
     .entry-content {
         margin: 0 auto;
-        
-        h2 {
-            text-align: center;
-            text-transform: uppercase;
+    }
+    .featured-journals-wrapper{
+        .featured-journals {
+            line-height: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: none;
+            .featured-journals-info {
+
+                line-height: $font__line-height-body;
+                border: 1px solid $border-gray;
+                border-top: 4px solid $border-gray;
+            }
         }
     }
 }
@@ -384,10 +395,5 @@
 
     .entry-content {
         margin: 0 auto;
-        
-        h2 {
-            text-align: center;
-            text-transform: uppercase;
-        }
     }
 }
