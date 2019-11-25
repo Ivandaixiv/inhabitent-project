@@ -857,6 +857,15 @@ object {
       margin: 0;
       height: 40px; }
 
+.theme-button-green a {
+  color: #ffffff;
+  background: #248A83;
+  text-decoration: none;
+  padding: 10px 20px;
+  text-transform: uppercase; }
+  .theme-button-green a:hover {
+    background: #165753; }
+
 .theme-button {
   color: black;
   width: 150px;
@@ -879,11 +888,26 @@ object {
   text-align: center;
   width: 1120px;
   margin: 0 auto; }
+  .front-page .product-info h2 {
+    text-transform: uppercase; }
   .front-page .product-info div {
     margin: 0 auto; }
   .front-page .product-info .product-type-blocks {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr; }
+    .front-page .product-info .product-type-blocks .product-type-block-wrapper {
+      border: 1px solid #e1e1e1;
+      border-top: 4px solid #e1e1e1;
+      margin: 0 10px;
+      padding: 10px 0; }
+      .front-page .product-info .product-type-blocks .product-type-block-wrapper:hover {
+        border: 1px solid #d99054;
+        border-top: 4px solid #d99054; }
+      .front-page .product-info .product-type-blocks .product-type-block-wrapper img {
+        width: 25%; }
+      .front-page .product-info .product-type-blocks .product-type-block-wrapper p {
+        margin: 0;
+        padding: 20px; }
 
 .front-page input[type="search"] {
   color: #ffffff; }
@@ -1010,7 +1034,7 @@ object {
             box-shadow: none;
     padding: 10px 20px; }
     .entry-content .wpcf7-submit:hover {
-      background: #124744; }
+      background: #165753; }
 
 .about-page input[type="search"] {
   color: #ffffff; }

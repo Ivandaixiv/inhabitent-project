@@ -55,6 +55,19 @@
 }
 
 // Button 
+.theme-button-green{
+    a {
+        color: $base_white;
+        background: $base_theme_green;
+        text-decoration: none;
+        padding: 10px 20px ;
+        text-transform: uppercase;
+
+        &:hover {
+            background: $base_theme_green_darken;
+        }
+    }
+}
 .theme-button {
     color: black;
     width: 150px;
@@ -86,12 +99,34 @@
         width: 1120px;
         margin: 0 auto;
 
+        h2 {
+            text-transform: uppercase;
+        }
         div {
             margin: 0 auto;
         }
         .product-type-blocks {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
+
+           .product-type-block-wrapper{
+               border: 1px solid $border-gray;
+               border-top: 4px solid $border-gray;
+               margin: 0 10px;
+               padding: 10px 0;
+                &:hover {
+                    border: 1px solid $base_theme_orange;
+                    border-top: 4px solid $base_theme_orange;
+                }
+
+                img {
+                    width: 25%;
+                }
+                p {
+                    margin: 0;
+                    padding: 20px;
+                }
+            }
         }
     }
     input[type="search"] {
