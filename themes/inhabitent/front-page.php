@@ -46,9 +46,19 @@ get_header(); ?>
 					<?php if ( $journal->have_posts() ) : ?>
 					<?php while ( $journal->have_posts() ) : $journal->the_post(); ?>
 						<div class="featured-journals-box">
-							<span class="featured-journals-image"><?php the_post_thumbnail('large')?></span>
+							<span class="featured-journals-image">
+								<?php the_post_thumbnail()?>
+							</span>
 							<div class="featured-journals-info">
+								<p>
+									<?php echo get_the_date();?>
+									/
+									<?php echo get_comments_number();?> Comments
+								</p>
 								<h1><?php the_title(); ?></h1>
+								<p class='themed-button-white'>
+									<a href="<?php echo get_the_permalink();?>">Read Entry</a>
+								</p>
 							</div>
 						</div>
 						<?php endwhile; ?>

@@ -866,6 +866,17 @@ object {
   .theme-button-green a:hover {
     background: #165753; }
 
+.themed-button-white a {
+  color: black;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 10px 20px; }
+
+.themed-button-white *:hover {
+  color: #ffffff;
+  background: #248A83;
+  border: 1px solid rgba(0, 0, 0, 0); }
+
 .theme-button {
   color: black;
   width: 150px;
@@ -967,11 +978,17 @@ object {
   line-height: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: none; }
+  grid-gap: 20px; }
+  .front-page .featured-journals-wrapper .featured-journals .featured-journals-image img {
+    height: 250px; }
   .front-page .featured-journals-wrapper .featured-journals .featured-journals-info {
     line-height: 1.75;
     border: 1px solid #e1e1e1;
-    border-top: 4px solid #e1e1e1; }
+    border-top: 4px solid #e1e1e1;
+    padding: 20px; }
+    .front-page .featured-journals-wrapper .featured-journals .featured-journals-info h1 {
+      color: #248A83;
+      font-size: 1.5rem; }
 
 .width-restriction {
   margin: 0 auto;

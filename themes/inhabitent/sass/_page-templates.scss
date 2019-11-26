@@ -60,12 +60,25 @@
         color: $base_white;
         background: $base_theme_green;
         text-decoration: none;
-        padding: 10px 20px ;
+        padding: 10px 20px;
         text-transform: uppercase;
 
         &:hover {
             background: $base_theme_green_darken;
         }
+    }
+}
+.themed-button-white {
+    a {
+        color: black;
+        text-decoration: none;
+        border: 1px solid black;
+        padding: 10px 20px;
+    }
+    *:hover {
+        color: $base_white;
+        background: $base_theme_green;
+        border: 1px solid rgba($color: #000000, $alpha: 0);
     }
 }
 .theme-button {
@@ -90,6 +103,7 @@
             color: $base_journal;
         }
     }
+    
 }
 // Styling for all h2's
 .frontpage-title {
@@ -207,12 +221,23 @@
             line-height: 0;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-gap: none;
+            grid-gap: 20px;
+            .featured-journals-image {
+                img{
+                    height: 250px;
+                }
+            }
             .featured-journals-info {
 
                 line-height: $font__line-height-body;
                 border: 1px solid $border-gray;
                 border-top: 4px solid $border-gray;
+                padding: 20px;
+
+                h1 {
+                    color: $base_theme_green;
+                    font-size: 1.5rem;
+                }
             }
         }
     }
