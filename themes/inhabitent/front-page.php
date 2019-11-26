@@ -69,6 +69,50 @@ get_header(); ?>
 					<?php endif; ?>
 				</div>
 			</section>
+			<section class="adventures-wrapper width-restriction">
+				<h2 class='frontpage-title'>Latest adventures</h2>
+				<div class="adventures-posts-wrapper">
+					<div class="adventure-post-1">
+						<img src="<?php echo get_template_directory_uri();?>/images/adventure-photos/canoe-girl.jpg" alt="Canoe Girl">
+						<div class=adventure-info>
+							<h2>Getting Back to Nature in a Canoe</h2>
+							<p class='themed-button-black adventure-button'>
+								<a href="<?php echo get_the_permalink();?>">Read More</a>
+							</p>
+						</div>
+					</div>
+					<div class="adventure-post-2">
+						<img src="<?php echo get_template_directory_uri();?>/images/adventure-photos/beach-bonfire.jpg" alt="Beach Bonfire">
+						<div class=adventure-info>
+							<h2>Taking in the View at Big Mountain</h2>
+							<p class='themed-button-black adventure-button'>
+								<a href="<?php echo get_the_permalink();?>">Read More</a>
+							</p>
+						</div>
+					</div>
+					<div class="adventure-post-3">
+						<img src="<?php echo get_template_directory_uri();?>/images/adventure-photos/mountain-hikers.jpg" alt="Mountain Hikers">
+						<div class=adventure-info>
+							<h2>A Night with Friends at the Beach</h2>
+							<p class='themed-button-black adventure-button'>
+								<a href="<?php echo get_the_permalink();?>">Read More</a>
+							</p>
+						</div>
+					</div>
+					<div class="adventure-post-4">
+						<img src="<?php echo get_template_directory_uri();?>/images/adventure-photos/night-sky.jpg" alt="Night Sky">
+						<div class=adventure-info>
+							<h2>Star-Gazing at the Night Sky</h2>
+							<p class='themed-button-black adventure-button'>
+								<a href="<?php echo get_the_permalink();?>">Read More</a>
+							</p>
+						</div>
+					</div>
+					<p class='theme-button-green adventure-button'>
+						<a href="<?php echo get_the_permalink();?>">More Adventures</a>
+					</p>
+				</div>
+			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

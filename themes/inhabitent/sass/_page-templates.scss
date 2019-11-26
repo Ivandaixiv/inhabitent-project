@@ -74,12 +74,27 @@
         text-decoration: none;
         border: 1px solid black;
         padding: 10px 20px;
+        &:hover {
+            color: $base_white;
+            background: $base_theme_green;
+            border: 1px solid rgba($color: #000000, $alpha: 0);
+        }
     }
-    *:hover {
+}
+.themed-button-black {
+    a {
         color: $base_white;
-        background: $base_theme_green;
-        border: 1px solid rgba($color: #000000, $alpha: 0);
+        text-decoration: none;
+        border: 1px solid $base_white;
+        padding: 15px 20px;
+        text-transform: uppercase;
+        &:hover {
+            color: $base_white;
+            background: $base_theme_green;
+            border: 1px solid rgba($color: #000000, $alpha: 0);
+        }
     }
+    
 }
 .theme-button {
     color: black;
@@ -233,15 +248,93 @@
                 border: 1px solid $border-gray;
                 border-top: 4px solid $border-gray;
                 padding: 20px;
+                text-transform: uppercase;
+
+                p {
+                    margin: 0;
+                    font-size: .8rem;
+                }
 
                 h1 {
                     color: $base_theme_green;
-                    font-size: 1.5rem;
+                    line-height: $base__space-unit;
+                    font-size: 1.4rem;
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+    .adventures-posts-wrapper {
+        display: grid;
+        grid-template-areas: "a a b b"
+                             "a a c d";
+        grid-gap: 20px;
+        grid-template-rows: 1fr 1fr;
+
+        div {
+
+            .adventure-info {
+
+                margin-top: -325px;
+                margin-left: 30px;
+                position: absolute;
+
+                h2 {
+                    font-size: 2.5rem;
+                    width: 400px;
+                    color: $base_white;
+                }
+            }
+            img {
+                filter: brightness(60%);
+                display: block;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .adventure-post-1 {
+            grid-area: a;
+            h2 {
+                margin-top: -275px;
+            }
+        }
+        .adventure-post-2 {
+            grid-area: b;
+            height: 300px;
+            img {
+                width: 100%;
+            }
+        }
+        .adventure-post-3 {
+            height: 300px;
+            grid-area: c;
+            img {
+                width: 100%;
+            }
+            .adventure-info {
+                margin-top: -300px;
+                h2 {
+                    font-size: 1.75rem;
+                    width: 200px;
+                }
+            }
+        }
+        .adventure-post-4 {
+            height: 300px;
+            grid-area: d;
+            .adventure-info {
+                margin-top: -300px;
+                h2 {
+                    font-size: 1.75rem;
+                    width: 200px;
                 }
             }
         }
     }
 }
+// Shop Page
+
 // Width Limit
 .width-restriction {
     margin: 0 auto;
