@@ -357,7 +357,7 @@
         }
     }
     .shop-container {
-        margin-top: 50px;
+        margin: 50px 0;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 25px;
@@ -381,6 +381,34 @@
             border-top: 4px solid $border-gray;
             display: flex;
             justify-content: space-between;
+        }
+    }
+    .product-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+        margin: 50px 0;
+        .product-details {
+            h2{
+                margin: 0;
+                color: $base_theme_orange;
+                font-size: 2rem;
+                text-transform: uppercase;
+            }
+            .product-price {
+                margin: 10px 0;
+                font-size: 1.5rem;
+            }
+        }
+        .product-social {
+            display: flex;
+            p {
+                margin-right: 10px;
+                text-transform: uppercase;
+            }
+            i {
+                font-size: .8rem;
+            }
         }
     }
 }

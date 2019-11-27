@@ -19,7 +19,7 @@ get_header(); ?>
 				?>
 				<span class="shop-categories-nav">
 					<?php foreach ( $terms as $term ) : ?>
-						<p class="shop-categories"><a href="<?php echo get_the_permalink();?>"><?php echo $term->name; ?></a></p>
+						<p class="shop-categories"><a href="<?php echo get_term_link($term);?>"><?php echo $term->name; ?></a></p>
 						<!-- 
 							Needs to link to the pages sorted by only the categories
 						-->
@@ -56,8 +56,6 @@ get_header(); ?>
 						</a>
 					</div>
 				<?php endwhile; ?>
-					<?php the_posts_navigation(); ?>
-					<?php wp_reset_postdata(); ?>
 				<?php else : ?> 
 					<h2>Nothing found!</h2>
 				<?php endif; ?>
