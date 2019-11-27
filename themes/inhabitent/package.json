@@ -22,7 +22,10 @@
     "singleQuote": true
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp",
+    "build": "gulp sass && gulp scripts",
+    "gitcheck": "git status && git log"
   },
   "repository": {
     "type": "git",
