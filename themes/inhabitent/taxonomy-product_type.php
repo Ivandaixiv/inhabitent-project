@@ -6,23 +6,12 @@
  */
 
 get_header(); ?>
+
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main  width-restriction taxonomy-product_type" role="main">
 			<div class="shop-nav-container">
-				<h2 class="frontpage-title">Shop Stuff</h2>
-				<?php
-				$terms = get_terms( array(
-					'taxonomy' => 'product_type',
-					'hide_empty' => 0,
-				) );
-				if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :
-				?>
-				<span class="shop-categories-nav">
-					<?php foreach ( $terms as $term ) : ?>
-						<p class="shop-categories"><a href="<?php echo get_term_link($term);?>"><?php echo $term->name; ?></a></p>
-					<?php endforeach; ?>
-				</span>
-				<?php endif; ?>
+				<h1 class="shop-categories"><?php echo single_term_title(); ?></h1>
+				<p><?php echo term_description();?></p>
 			</div>
 			<section class="shop-container width-restriction">
 				<?php
@@ -30,6 +19,13 @@ get_header(); ?>
 						'order' => 'ASC',
 						'posts_per_page' => 16,
 						'post_type' => 'product',
+						'tax_query' => array(
+							array (
+								'taxonomy' => 'product_type',
+								'field' => 'slug',
+								'terms' => get_queried_object(),
+							)
+						),
 					);
 					$shop = new WP_Query( $args );
 				?>
@@ -59,5 +55,4 @@ get_header(); ?>
 			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
 <?php get_footer(); ?>

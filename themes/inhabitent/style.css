@@ -1074,6 +1074,11 @@ object {
       .archive .shop-categories-nav .shop-categories a:hover, .single .shop-categories-nav .shop-categories a:hover {
         color: midnightblue; }
 
+.archive .taxonomy-product_type div, .single .taxonomy-product_type div {
+  text-align: center; }
+  .archive .taxonomy-product_type div h1, .single .taxonomy-product_type div h1 {
+    text-transform: uppercase; }
+
 .archive .shop-container, .single .shop-container {
   margin: 50px 0;
   display: grid;
