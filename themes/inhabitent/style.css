@@ -1054,6 +1054,31 @@ object {
         font-size: 1.75rem;
         width: 200px; }
 
+.archive .shop-nav-container, .single .shop-nav-container {
+  padding-bottom: 50px;
+  border-bottom: 1px dashed #e1e1e1; }
+
+.archive .shop-categories-nav, .single .shop-categories-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 30%; }
+  .archive .shop-categories-nav .shop-categories, .single .shop-categories-nav .shop-categories {
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 1.25rem; }
+    .archive .shop-categories-nav .shop-categories a, .single .shop-categories-nav .shop-categories a {
+      color: #248A83;
+      text-decoration: none; }
+      .archive .shop-categories-nav .shop-categories a:hover, .single .shop-categories-nav .shop-categories a:hover {
+        color: midnightblue; }
+
+.archive .shop-container, .single .shop-container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; }
+
 .width-restriction {
   margin: 0 auto;
   width: 1120px; }

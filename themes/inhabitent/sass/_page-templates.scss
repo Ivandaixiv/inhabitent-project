@@ -334,6 +334,34 @@
     }
 }
 // Shop Page
+.archive,.single {
+    .shop-nav-container {
+        padding-bottom: 50px;
+        border-bottom: 1px dashed $border-gray;
+    }
+    .shop-categories-nav {
+        display: flex;
+        margin: 0 auto;
+        width: 30%;
+        .shop-categories {
+            margin: 0 auto;
+            a {
+                color: $base_theme_green;
+                text-decoration: none;
+                &:hover {
+                    color: $color__link-hover;
+                }
+            }
+            text-transform: uppercase;
+            font-size: 1.25rem;
+        }
+    }
+    .shop-container {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;;
+    }
+}
 
 // Width Limit
 .width-restriction {

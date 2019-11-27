@@ -8,8 +8,26 @@
 get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<h2 class="frontpage-title">Shop Stuff</h2>
-			<section class="shop-container">
+			<div class="shop-nav-container">
+				<h2 class="frontpage-title">Shop Stuff</h2>
+				<?php
+				$terms = get_terms( array(
+					'taxonomy' => 'product_type',
+					'hide_empty' => 0,
+				) );
+				if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :
+				?>
+				<span class="shop-categories-nav">
+					<?php foreach ( $terms as $term ) : ?>
+						<p class="shop-categories"><a href="<?php echo get_the_permalink();?>"><?php echo $term->name; ?></a></p>
+						<!-- 
+							Needs to link to the pages sorted by only the categories
+						-->
+					<?php endforeach; ?>
+				</span>
+				<?php endif; ?>
+			</div>
+			<section class="shop-container width-restriction">
 				<?php
 					$args = array(
 						'order' => 'ASC',
@@ -17,25 +35,28 @@ get_header(); ?>
 						'post_type' => 'product',
 					);
 					$shop = new WP_Query( $args );
-				?>	   
+				?>
 				<?php if ( $shop->have_posts() ) : ?>
 				<?php while ( $shop->have_posts() ) : $shop->the_post(); ?>
-					<div class="featured-journals-box">
-						<span class="featured-journals-image">
+					<div class="shop-content">
+						<span class="product-image">
 							<?php the_post_thumbnail()?>
 						</span>
-						<div class="featured-journals-info">
+						<div class="product-info">
 							<h1><?php the_title(); ?></h1>
+							<p>
+								<?php   
+									$post = get_post(); 
+									$price = $post->price;
+									echo $price;
+								?>
+							</p>
 						</div>
 					</div>
-					<?php   $post = get_post(); 
-							$price = $post->price;
-							echo $price;
-					?>
-					<?php endwhile; ?>
+				<?php endwhile; ?>
 					<?php the_posts_navigation(); ?>
 					<?php wp_reset_postdata(); ?>
-					<?php else : ?> 
+				<?php else : ?> 
 					<h2>Nothing found!</h2>
 				<?php endif; ?>
 			</section>
