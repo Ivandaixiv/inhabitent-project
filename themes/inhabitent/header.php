@@ -17,10 +17,6 @@
 	$displayblue = "none";
 	$displaywhite = "block";
  }
-//  elseif(is_post_type_archive('product')){
-// 	$header_class = 'shop-page';
-// 	$displayblue = true;
-// 	$displaywhite = false;
 	 
 //  } 
  else {
