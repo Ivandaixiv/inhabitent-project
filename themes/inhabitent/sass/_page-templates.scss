@@ -359,7 +359,29 @@
     .shop-container {
         margin-top: 50px;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 25px;
+        .shop-content {
+            a {
+                color: $color__text-main;
+                text-decoration: none;
+            }
+        }
+        .product-image {
+            img {
+                display: block;
+                object-fit: cover;
+                height: 200px;
+            }
+        }
+        .product-info {
+            padding: 0 15px;
+            height: 65px;
+            border: 1px solid $border-gray;
+            border-top: 4px solid $border-gray;
+            display: flex;
+            justify-content: space-between;
+        }
     }
 }
 

@@ -39,19 +39,21 @@ get_header(); ?>
 				<?php if ( $shop->have_posts() ) : ?>
 				<?php while ( $shop->have_posts() ) : $shop->the_post(); ?>
 					<div class="shop-content">
-						<span class="product-image">
-							<?php the_post_thumbnail()?>
-						</span>
-						<div class="product-info">
-							<h1><?php the_title(); ?></h1>
-							<p>
-								<?php   
-									$post = get_post(); 
-									$price = $post->price;
-									echo $price;
-								?>
-							</p>
-						</div>
+						<a href="<?php echo get_the_permalink();?>">
+							<span class="product-image">
+								<?php the_post_thumbnail()?>
+							</span>
+							<div class="product-info">
+								<p class=product-title><?php the_title(); ?></p>
+								<p>
+									$<?php   
+										$post = get_post(); 
+										$price = $post->price;
+										echo $price;
+									?>
+								</p>
+							</div>
+						</a>
 					</div>
 				<?php endwhile; ?>
 					<?php the_posts_navigation(); ?>

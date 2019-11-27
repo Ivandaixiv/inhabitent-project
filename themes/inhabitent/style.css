@@ -1077,7 +1077,27 @@ object {
 .archive .shop-container, .single .shop-container {
   margin-top: 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; }
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 25px; }
+  .archive .shop-container .shop-content a, .single .shop-container .shop-content a {
+    color: #404040;
+    text-decoration: none; }
+  .archive .shop-container .product-image img, .single .shop-container .product-image img {
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 200px; }
+  .archive .shop-container .product-info, .single .shop-container .product-info {
+    padding: 0 15px;
+    height: 65px;
+    border: 1px solid #e1e1e1;
+    border-top: 4px solid #e1e1e1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
 
 .width-restriction {
   margin: 0 auto;
