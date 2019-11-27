@@ -4,6 +4,17 @@
 // Widget Area Default
 .widget-area {
     width: 300px;
+
+    .widget {
+        li {
+            
+            list-style: none;
+            a {
+                color: $base_theme_green;
+                text-decoration: none;
+            }
+        }
+    }
     .widget-area-container {
         padding-top: 50px;
         padding-left: 30px;
@@ -57,6 +68,7 @@
 // Button 
 .theme-button-green{
     a {
+	    font-family: $theme_font2;
         color: $base_white;
         background: $base_theme_green;
         text-decoration: none;
@@ -70,6 +82,7 @@
 }
 .themed-button-white {
     a {
+	    font-family: $theme_font2;
         color: black;
         text-decoration: none;
         border: 1px solid black;
@@ -83,6 +96,7 @@
 }
 .themed-button-black {
     a {
+	    font-family: $theme_font2;
         color: $base_white;
         text-decoration: none;
         border: 1px solid $base_white;
@@ -97,6 +111,8 @@
     
 }
 .theme-button {
+
+	font-family: $theme_font2;
     color: black;
     width: 150px;
     margin: 10px 0;
@@ -122,6 +138,8 @@
 }
 // Styling for all h2's
 .frontpage-title {
+    font-family: $theme_font2;
+    font-size: 2.5rem;
     text-align: center;
     text-transform: uppercase;
 }
@@ -139,12 +157,15 @@
         .product-type-blocks {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-
+                
            .product-type-block-wrapper{
                border: 1px solid $border-gray;
                border-top: 4px solid $border-gray;
-               margin: 0 10px;
+               margin: 0 15px;
                padding: 10px 0;
+               .shop-description {
+                   height: 125px;
+               }
                 &:hover {
                     border: 1px solid $base_theme_orange;
                     border-top: 4px solid $base_theme_orange;
@@ -232,6 +253,7 @@
         margin: 0 auto;
     }
     .featured-journals-wrapper{
+        font-family: $theme_font2;
         .featured-journals {
             line-height: 0;
             display: grid;
@@ -243,7 +265,7 @@
                 }
             }
             .featured-journals-info {
-
+                
                 line-height: $font__line-height-body;
                 border: 1px solid $border-gray;
                 border-top: 4px solid $border-gray;
@@ -251,11 +273,13 @@
                 text-transform: uppercase;
 
                 p {
+                    
                     margin: 0;
                     font-size: .8rem;
                 }
 
                 h1 {
+                    
                     color: $base_theme_green;
                     line-height: $base__space-unit;
                     font-size: 1.4rem;
@@ -443,6 +467,7 @@
         
         .widget-area {
 
+	        font-family: $theme_font2;
             border-left: 1px solid $border-gray;
             grid-column-start: 0;
         }
@@ -457,6 +482,8 @@
     }
 
     .journal-title-wrapper {
+
+	    font-family: $theme_font2;
         max-width: 600px;
         text-transform: uppercase;
         position: absolute;
@@ -489,7 +516,7 @@
         z-index: 1;
         padding: .4rem .8rem;
         margin-top: -3.1em;
-        margin-left: 398.75px;
+        margin-left: 368.5px;
     }
 }
 // Find Us/ Contact page
@@ -528,7 +555,7 @@
 }
 // About
 .about-page {
-
+    
     input[type="search"] {
         color: $base_white;
     }
@@ -599,5 +626,11 @@
 
     .entry-content {
         margin: 0 auto;
+        h2 {
+            font-family: $theme_font2;
+            font-size: 2.5rem;
+            text-align: center;
+            text-transform: uppercase;
+        }
     }
 }

@@ -24,7 +24,7 @@ get_header(); ?>
 					<?php foreach ( $terms as $term ) : ?>
 						<div class="product-type-block-wrapper">
 							<img src="<?php echo get_template_directory_uri() . '/images/product-type-icons/' . $term->slug; ?>.svg" alt="<?php echo $term->name; ?>" />
-							<p class="shop-icons"><?php echo $term->description; ?></p>
+							<p class="shop-description"><?php echo $term->description; ?></p>
 							<p class="theme-button-green"><a href="<?php echo get_term_link( $term ); ?>" class="btn"><?php echo $term->name; ?> Stuff</a></p>
 						</div>
 					<?php endforeach; ?>
