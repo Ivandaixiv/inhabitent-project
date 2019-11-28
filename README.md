@@ -1,6 +1,10 @@
 # Inhabitent Wordpress Project
 Ajax and Wordpress API
 
+## Project Photos
+
+![screenshot 1](../themes/inhabitent/images/screencap1)
+
 ## Key Learning
 HTML, CSS, Javascript, Ajax, Gulp, Sass, Wordpress API, Minify, Json, etc...
 
