@@ -4,7 +4,10 @@ Ajax and Wordpress API
 ## Project Photos
 
 ![screenshot 1](/themes/inhabitent/images/screencap1.png)
-
+![screenshot 2](/themes/inhabitent/images/screencap2.png)
+![screenshot 3](/themes/inhabitent/images/screencap3.png)
+![screenshot 4](/themes/inhabitent/images/screencap4.png)
+![screenshot 5](/themes/inhabitent/images/screencap5.png)
 ## Key Learning
 HTML, CSS, Javascript, Ajax, Gulp, Sass, Wordpress API, Minify, Json, etc...
 
